@@ -24,7 +24,7 @@ add_definitions(-DGLEW_STATIC)
 add_executable(Clion-OpenGL ${SOURCE_FILES})
 
 if (WIN32)
-    target_link_libraries(Clion-OpenGL glew32s glfw3 opengl32 User32 Gdi32 Shell32)
+    target_link_libraries(Clion-OpenGL glew32s glfw3 opengl32)
 elseif (APPLE)
     target_link_libraries(Clion-OpenGL glew glfw3)
 endif ()
